@@ -413,6 +413,10 @@ button:focus {
   line-height: 70px;
 }
 
+#margintop {
+  margin-left: 3rem;
+}
+
 @media (min-width: 992px) {
   .header_area.white_menu .navbar .navbar-brand img {
     display: none;
@@ -426,6 +430,10 @@ button:focus {
 @media (max-width: 991px) {
   .header_area.white_menu .navbar .navbar-brand img {
     display: inline-block;
+  }
+
+  #margintop {
+    margin-left: 0px;
   }
 
   .foto {
