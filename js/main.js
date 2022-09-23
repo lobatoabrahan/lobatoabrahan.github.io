@@ -5,10 +5,6 @@ document.querySelector('.navbar-toggler').removeAttribute('aria-expanded')
 }) */
 
 document.querySelector('.navbar-toggler').addEventListener('click', ()=>{
-    //Animate Links
-    console.log(document.querySelector('.navbar-toggler').getAttribute('aria-expandedd'));
-    console.log(document.querySelector('.navbar-collapse').className)
-
     if (document.querySelector('.navbar-toggler').getAttribute('aria-expandedd') === 'false') {
         document.querySelector('.navbar-toggler').setAttribute('aria-expandedd', 'true');
     } else {
