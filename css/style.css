@@ -429,10 +429,16 @@ a:hover {
     backdrop-filter: blur(0.6rem);
   }
 
+  .collapsing{
+    position:relative;
+    height:0;
+    overflow:hidden;
+    transition: all .35s ease;
+  }
+
+
   .navbar-oculto {
     margin-top: 20px;
-    background-color: white;
-    height: 20rem;
     border-radius: none;
     background: white;
     box-shadow: none;
