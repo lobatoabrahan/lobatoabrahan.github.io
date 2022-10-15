@@ -574,6 +574,27 @@ a:hover {
   .hero-bg-1 {
     display: none;
   }
+  h1, .h1 {
+    font-size: 52px;
+  }
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: .7em
+}
+
+::-webkit-scrollbar-track {
+  background: #E8E8E8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C7C7C7;
+  border-radius: 100vw
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #adadad;
 }
 
 .hero-bg-2 {
