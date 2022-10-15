@@ -94,6 +94,16 @@ h6, .h6 {
   color: #091337;
 }
 
+.btn2 {
+  background-image: linear-gradient(to left, #d3fc71, #17ffd3, #d3fc71);
+  margin-bottom: 9%;
+}
+
+.btn2:hover {
+  background-position: right;
+  color: #091337;
+}
+
 .btn-primary {
   background-image: linear-gradient(25deg, #17ffd3 0%, #d3fc71 95%);
   color: #091337;
@@ -611,8 +621,8 @@ a:hover {
 
 .hero-bg-3 {
   position: absolute;
-  bottom: 0%;
-  left: 10%;
+  bottom: 15%;
+  left: 0%;
 }
 
 @media (max-width: 767px) {
@@ -660,8 +670,7 @@ a:hover {
 .hero-bg-7 {
   position: absolute;
   left: 20%;
-  bottom: -17%;
-  z-index: 1;
+  bottom: 0%;
 }
 
 @media (max-width: 767px) {
@@ -672,9 +681,8 @@ a:hover {
 
 .hero-bg-8 {
   position: absolute;
-  bottom: -30%;
+  bottom: -13%;
   right: 50%;
-  z-index: 1;
 }
 
 @media (max-width: 767px) {
@@ -686,8 +694,7 @@ a:hover {
 .hero-bg-9 {
   position: absolute;
   right: 20%;
-  bottom: -10%;
-  z-index: 1;
+  bottom: 0%;
 }
 
 @media (max-width: 767px) {
@@ -717,6 +724,12 @@ a:hover {
   left: 0;
   top: 50%;
   z-index: -1;
+}
+
+@media (max-width: 991px) {
+  .feature {
+    padding-top: 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1166,6 +1179,12 @@ a:hover {
   line-height: 45px;
   display: block;
   text-align: center;
+}
+
+.section-client-logo-slider {
+  display: flex;
+  padding-bottom: 0px;
+  align-items: center;
 }
 
 .client-logo-slider img {
