@@ -12,6 +12,8 @@
     }
   });
 
+  //service
+
   // team slider
   $('.team-slider').slick({
     dots: false,
