@@ -850,16 +850,7 @@ a:hover {
   position: relative;
 }
 
-.container1 h1::after {
-  content: '';
-  background: #303ef7;
-  width: 100px;
-  height: 5px;
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-}
+
 
 .row1 {
   display: grid;
