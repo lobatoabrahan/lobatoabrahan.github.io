@@ -1749,6 +1749,14 @@ hr {
   }
 }
 
+.section-clients {
+  padding-top: 130px;
+}
+
+#row-mission {
+  align-items: center;
+}
+
 .play-btn {
   height: 70px;
   width: 70px;
