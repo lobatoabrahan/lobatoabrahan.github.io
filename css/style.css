@@ -99,7 +99,6 @@ h6,
 .btn-abrahan {
   font-family: "Poppins", sans-serif;
   background-size: 200%;
-  border-radius: 50px;
   color: #091337;
 }
 
@@ -1800,6 +1799,17 @@ hr {
 .form-control:focus {
   border-color: #008dec;
   box-shadow: none;
+}
+
+#service-form {
+  color: #6c757d;
+}
+
+.valid-text {
+  display: block;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  color: red;
 }
 
 textarea.form-control {

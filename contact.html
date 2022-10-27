@@ -8,7 +8,7 @@
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
+
   <!-- ** Plugins Needed for the Project ** -->
   <!-- Bootstrap -->
   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
@@ -23,167 +23,241 @@
 
   <!-- Main Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
-  
+
   <!--Favicon-->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
+  <!-- jQuery and Bootstrap JS -->
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <!-- BootstrapValidator JS -->
+  <script type="text/javascript" src="js/bootstrapvalidator.js"></script>
 </head>
 
 <body>
-  
 
-<!-- navigation -->
-<section class="fixed-top navigation">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
-      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- navbar -->
-      <div class="collapse navbar-collapse text-center" id="navbar">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="index.html#feature">Feature</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="service.html">Service</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="index.html#team">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="index.html#pricing">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-        <a href="#" class="btn btn-primary ml-lg-3 primary-shadow">Try Free</a>
-      </div>
-    </nav>
-  </div>
-</section>
-<!-- /navigation -->
 
-<!-- contact -->
-<section class="section-lg contact">
+  <!-- navigation -->
+  <section class="fixed-top navigation">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-title">Contact</h2>
-            </div>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <a class="navbar-toggler collapsed border-0" type="button" data-toggle="collapse" data-target="#navbar"
+          aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <!-- navbar -->
+        <div class="collapse navbar-collapse justify-content-center text-center" id="navbar">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero-section">Home</a>
+            </li>
+            <!-- <li class="nav-item">
+          <a class="nav-link page-scroll" href="#feature">Feature</a>
+        </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#team">Clients</a>
+            </li>
+            <!-- <li class="nav-item">
+          <a class="nav-link page-scroll" href="#pricing">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li> -->
+          </ul>
+          <a href="#" class="btn btn-abrahan btn1  justify-content-end ">Contact us</a>
         </div>
-        <div class="row contact-bg p-5 rounded mb-5">
-            <div class="col-lg-7 mb-4 mb-lg-0">
-                <form action="#">
-                    <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Your Name">
-                    <input type="email" class="form-control mb-3" id="mail" name="mail" placeholder="Your Email">
-                    <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="Subject">
-                    <textarea name="message" id="message" class="form-control mb-3" placeholder="Your Message"></textarea>
-                    <button type="submit" value="send" class="btn btn-secondary">SEND MESSAGE</button>
-                </form>
-            </div>
-            <div class="col-lg-5">
-                <p class="mb-5">If you'll like to know more about our experience designing and delivering cloud solutions, or get advice on your own technology challenges get in touch. With dedicated engineers on-hand 24/7,      we’re set up to become an extension of your team.</p>
-                <a href="tel:+442081446356" class="text-color h5 d-block">+44 20 8144 6356</a>
-                <a href="mailto:info@altostack.io" class="mb-5 text-color h5 d-block">info@altostack.io</a>
-                <p>71 Shelton Street<br>London WC2H 9JQ England</p>
-            </div>
+      </nav>
+    </div>
+  </section>
+  <!-- /navigation -->
+
+  <!-- contact -->
+  <section class="section-lg contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-title">Contact</h2>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                <div class="card p-4 border-blue">
-                    <h5><i class="ti-layers-alt round-icon blue mr-2"></i> Sales</h5>
-                    <p class="mb-0">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-                </div>
+      </div>
+      <div class="row contact-bg p-5 rounded mb-5">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <form role="form" id="test-form">
+            <div class="mb-3">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+              <span class="valid-text" id="valid-name-text">Your Name is Required</span>
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                <div class="card p-4 border-blue">
-                    <h5><i class="ti-desktop round-icon green mr-2"></i> Help & Support</h5>
-                    <p class="mb-0">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-                </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="mail" name="mail" placeholder="Your Email" required>
+              <span class="valid-text" id="valid-email-text">Your Email is Required</span>
             </div>
-            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                <div class="card p-4 border-blue">
-                    <h5><i class="ti-panel round-icon orange mr-2"></i> Legal Departments</h5>
-                    <p class="mb-0">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-                </div>
+            <div class="mb-3">
+              <select class="form-control " id="service-form" name="service" required>
+                <option value="" hidden selected>Service</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <span class="valid-text" id="valid-service-text">Service is Required</span>
             </div>
+            <div class="mb-3">
+              <textarea name="message" id="message" class="form-control" placeholder="Your Message"></textarea>
+            </div>
+            <div class="mb-3">
+              <button class="btn btn-abrahan btn1" type="submit" id="postForm">Send
+                message</button>
+            </div>
+          </form>
         </div>
+        <div class="col-lg-5">
+          <p class="mb-5">If you'll like to know more about our experience designing and delivering cloud solutions, or
+            get advice on your own technology challenges get in touch. With dedicated engineers on-hand 24/7, we’re set
+            up to become an extension of your team.</p>
+          <a href="tel:+442081446356" class="text-color h5 d-block">+44 20 8144 6356</a>
+          <a href="mailto:info@altostack.io" class="mb-5 text-color h5 d-block">info@altostack.io</a>
+          <p>71 Shelton Street<br>London WC2H 9JQ England</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+          <div class="card p-4 border-blue">
+            <h5><i class="ti-layers-alt round-icon blue mr-2"></i> Sales</h5>
+            <p class="mb-0">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+          <div class="card p-4 border-blue">
+            <h5><i class="ti-desktop round-icon green mr-2"></i> Help & Support</h5>
+            <p class="mb-0">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+          <div class="card p-4 border-blue">
+            <h5><i class="ti-panel round-icon orange mr-2"></i> Legal Departments</h5>
+            <p class="mb-0">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- background shapes -->
     <img class="contact-bg-1 up-down-animation" src="images/background-shape/feature-bg-2.png" alt="background-shape">
-    <img class="contact-bg-2 left-right-animation" src="images/background-shape/green-half-cycle.png" alt="background-shape">
+    <img class="contact-bg-2 left-right-animation" src="images/background-shape/green-half-cycle.png"
+      alt="background-shape">
     <img class="contact-bg-3 up-down-animation" src="images/background-shape/green-dot.png" alt="background-shape">
-    <img class="contact-bg-4 left-right-animation" src="images/background-shape/service-half-cycle.png" alt="background-shape">
+    <img class="contact-bg-4 left-right-animation" src="images/background-shape/service-half-cycle.png"
+      alt="background-shape">
     <img class="contact-bg-5 up-down-animation" src="images/background-shape/feature-bg-2.png" alt="background-shape">
-</section>
-<!-- /contact -->
+  </section>
+  <!-- /contact -->
 
-<!-- footer -->
-<footer class="footer-section footer" style="background-image: url(images/backgrounds/footer-bg.png);">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
-        <!-- logo -->
-        <a href="index.html">
-          <img class="img-fluid" src="images/logo.png" alt="logo">
-        </a>
+  <!-- footer -->
+  <footer class="footer-section footer" style="background-image: url(images/backgrounds/footer-bg.png);">
+    <div class="container">
+      <div class="row">
+        <div class="columna col-sm-12 col-md-5">
+          <a href="index.html">
+            <img class="img-fluid" src="images/logo.png" alt="logo">
+          </a>
+        </div>
+
+        <div class="columna col-xs-6 col-md-4">
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/category/c-language/">Privacy policy</a></li>
+            <li><a href="http://scanfcode.com/category/front-end-development/">Terms of service</a></li>
+          </ul>
+        </div>
+
+        <div class="columna col-xs-6 col-md-3">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/about/">Home</a></li>
+            <li><a href="http://scanfcode.com/contact/">About Us</a></li>
+            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Services</a></li>
+            <li><a href="http://scanfcode.com/privacy-policy/">Clients</a></li>
+            <li><a href="http://scanfcode.com/sitemap/">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
-      <!-- footer menu -->
-      <nav class="col-lg-8 align-self-center mb-5">
-        <ul class="list-inline text-lg-right text-center footer-menu">
-          <li class="list-inline-item active"><a href="index.html">Home</a></li>
-          <li class="list-inline-item"><a class="page-scroll" href="#feature">Feature</a></li>
-          <li class="list-inline-item"><a href="about.html">About</a></li>
-          <li class="list-inline-item"><a class="page-scroll" href="#team">Team</a></li>
-          <li class="list-inline-item"><a class="page-scroll" href="#pricing">Pricing</a></li>
-          <li class="list-inline-item"><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <!-- footer social icon -->
-      <nav class="col-12">
-        <ul class="list-inline text-lg-right text-center social-icon">
-          <li class="list-inline-item">
-            <a class="facebook" href="#"><i class="ti-facebook"></i></a>
-          </li>
-          <li class="list-inline-item">
-            <a class="twitter" href="#"><i class="ti-twitter-alt"></i></a>
-          </li>
-          <li class="list-inline-item">
-            <a class="linkedin" href="#"><i class="ti-linkedin"></i></a>
-          </li>
-          <li class="list-inline-item">
-            <a class="black" href="#"><i class="ti-github"></i></a>
-          </li>
-        </ul>
-      </nav>
+      <hr>
     </div>
-  </div>
-</footer>
-<!-- /footer -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7  text-md-center col-md-12 col-sm-12 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved
+          </p>
+        </div>
 
-<!-- jQuery -->
-<script src="plugins/jQuery/jquery.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="plugins/bootstrap/bootstrap.min.js"></script>
-<!-- slick slider -->
-<script src="plugins/slick/slick.min.js"></script>
-<!-- venobox -->
-<script src="plugins/Venobox/venobox.min.js"></script>
-<!-- aos -->
-<script src="plugins/aos/aos.js"></script>
-<!-- Main Script -->
-<script src="js/script.js"></script>
+        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+          <nav class="col-12">
+            <ul class="list-inline text-lg-right text-center social-icon">
+              <li class="list-inline-item">
+                <a class="facebook" href="#"><i class="ti-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="twitter" href="#"><i class="ti-twitter-alt"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="linkedin" href="#"><i class="ti-linkedin"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a class="black" href="#"><i class="ti-github"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/validation-functions.js"></script>
+  </footer>
+  <!-- /footer -->
+
+  <!-- <script type="text/javascript">
+    function validateEmail() {
+      var emailValue = document.getElementById("mail").value;
+      var emailText = document.getElementById("valid-email-text");
+
+      console.log(emailValue)
+
+      if (emailValue.match(/^[^ ]+@[^ ]+\.[a-z]{2,3}$/) || emailValue == "email") {
+        emailText.innerHTML = "Your Email Address is Valid"
+        emailText.style.color = "#00ff00"
+      }
+      else {
+        emailText.innerHTML = "Your Email Address is Invalid"
+        emailText.style.color = "#ff0000"
+
+      }
+    }
+  </script> -->
+
+  <!-- <script type="text/javascript">
+    function validateService() {
+
+    }
+  </script> -->
+  <!-- Bootstrap JS -->
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- slick slider -->
+  <script src="plugins/slick/slick.min.js"></script>
+  <!-- venobox -->
+  <script src="plugins/Venobox/venobox.min.js"></script>
+  <!-- aos -->
+  <script src="plugins/aos/aos.js"></script>
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
 
 </body>
+
 </html>
