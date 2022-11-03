@@ -1,0 +1,131 @@
+:root {
+    --primer-color: #2b79ff;
+    --segundo-color: #ff4d50;
+    --hover-color-azul: #2f3196;
+    --gris: #2a282b;
+    --negro: #000000;
+    --blanco: #ffffff;
+    --font-family: 'Poppins'
+}
+
+* {
+    font-family: var(--font-family);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    outline: none;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    padding: 1rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellow;
+}
+
+
+
+.navbar__links-ul {
+    display: flex;
+    padding: 0;
+}
+
+.navbar__links-ul-li {
+    padding: 0 0.8rem;
+    margin-left: 0.4rem;
+}
+
+.navbar__button {
+    background-color: var(--primer-color);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: var(--blanco);
+}
+
+.navbar__responsive {
+    display: none;
+}
+
+/* Navbar completed */
+
+/* Navbar responsive */
+@media (max-width: 992px) {
+    .navbar__links-ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 13.35vw;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background: var(--segundo-color);
+    }
+
+    .navbar__links-ul-li {
+        padding: 1rem;
+    }
+
+    /* Navbar burguer */
+    .navbar__responsive {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+
+    .navbar__responsive-button {
+        width: 35px;
+        height: 5px;
+        background: var(--negro);
+        border-radius: 5px;
+        transition: all .5s ease-in-out;
+    }
+
+    .navbar__responsive-button::before,
+    .navbar__responsive-button::after {
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 5px;
+        background: var(--negro);
+        border-radius: 5px;
+        transition: all .5s ease-in-out;
+    }
+
+    .navbar__responsive-button::before {
+        transform: translateY(-10px);
+    }
+
+    .navbar__responsive-button::after {
+        transform: translateY(10px);
+    }
+    /* Navbar burguer completed */
+
+    /* Navbar burguer animation */
+    .navbar__responsive.open .navbar__responsive-button {
+        transform: translateX(-0px);
+        background: transparent;
+    }
+
+    .navbar__responsive.open .navbar__responsive-button::before {
+        transform: rotate(45deg);
+    }
+
+    .navbar__responsive.open .navbar__responsive-button::after {
+        transform: rotate(-45deg);
+    }
+    /* Navbar burguer animation completed*/
+
+}
+/* Navbar responsive completed*/
