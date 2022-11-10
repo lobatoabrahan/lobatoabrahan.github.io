@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,29 +9,588 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
 
 </head>
+
 <body>
+    <span id="top"></span>
+    <input type="checkbox" name="" id="menu-toggle">
+
+    <div class="sm-menu">
+        <ul>
+            <li><a href="#inicio" class="active">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mi</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contacto" id="responsive-btn">Contacto</a></li>
+        </ul>
+    </div>
+
     <header>
-        <nav class="navbar">
-            <div class="navbar__logo">
-                <a class="navbar__logo-text" href="#">Abrahan</a>
-            </div>
-            <div class="navbar__links">
-                <ul class="navbar__links-ul">
-                    <li class="navbar__links-ul-li"><a href="#">Inicio</a></li>
-                    <li class="navbar__links-ul-li"><a href="#">Sobre mi</a></li>
-                    <li class="navbar__links-ul-li"><a href="#">Servicios</a></li>
-                    <li class="navbar__links-ul-li"><a href="#">Portafolio</a></li>
-                    <li class="navbar__links-ul-li"><a href="#">Blog</a></li>
-                    <a href="#" class="navbar__button">Contacto</a>
-                </ul>
-            </div>
-            <div class="navbar__responsive">
-                <div class="navbar__responsive-button"></div>
-            </div>
-        </nav>
+        <div class="logo">
+            <h2>
+                <span class="logo-icon">
+                    <span class="lab la-fly"></span>
+                </span>
+                Abrahan
+            </h2>
+        </div>
+        <ul>
+            <li><a href="#inicio" class="active">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mi</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+        <div class="more-links">
+            <a href="#contacto" class="btn">Contacto</a>
+        </div>
+        <label for="menu-toggle">
+            <span class="las la-bars"></span>
+        </label>
     </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-flex">
+                <div class="hero-desc">
+                    <h1>Abrahan Lobato <span class="las la-hand-spock"></span></h1>
+                    <div class="job-title">
+                        <span></span>
+                        <h3>Data Analyts</h3>
+                    </div>
+                    <p>I'm creative designer based in new york and <br> i'm very passionate and dedicated to my work</p>
+                    <div class="hero-btns">
+                        <a href="" class="btn">
+                            Say Hello <span class="lab la-telegram-plane"></span>
+                        </a>
+                        <a href="">
+                            My work <span class="las la-arrow-up"></span>
+                        </a>
+                    </div>
+
+                    <div class="hero-icons">
+                        <span>Follow me</span>
+                        <div>
+                            <a href="">
+                                <span class="lab la-linkedin"></span>
+                            </a>
+                            <a href="">
+                                <span class="lab la-github"></span>
+                            </a>
+                            <a href="">
+                                <span class="lab la-instagram"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-img">
+                    <div class="hero-img-inner">
+                        <img src="img/banner.jpg" alt="">
+                        <div class="welcome">
+                            <div class="welcome-inner">
+                                <img src="img/welcome.png" alt="">
+                                <span class="las la-play"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="sobre-mi">
+            <div class="container">
+                <div class="about-wrapper">
+                    <div class="exp-num">
+                        <div>
+                            <h1>10</h1>
+                            <span>Years of Experience</span>
+                            <h3>ABRAHAN LOBATO</h3>
+                        </div>
+                    </div>
+                    <div class="about-info">
+                        <h2 class="section-head">Sobre mi <span class="line"></span></h2>
+                        <p>With 10 years of experience as a professional web developer, I have acquired the skills and
+                            knowledge necessary to make your project a sucess. I enjoy every step of the design process
+                            from
+                            discussion to collaboration</p>
+                        <div class="about-btns">
+                            <a href="" class="btn">Descargar CV <span class="las la-file-contract"></span></a>
+                            <img src="img/signature.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="area">
+            <div class="container">
+                <div class="area-wrapper">
+                    <div class="area-desc">
+                        <h2 class="section-head block">My expert <br>
+                            areas <span class="line"></span></h2>
+                        <p>Lorem ipsun is simply dummy text of the printing and typesetting industry</p>
+                        <p>Lorem ipsun is simply dummy text of the printing and typesetting industry</p>
+                        <div class="area-btns">
+                            <a href="" class="btn">My resume <span class="las la-file-contract"></span></a>
+                        </div>
+                    </div>
+                    <div class="area-details">
+                        <input type="radio" name="area" id="skill" checked>
+                        <input type="radio" name="area" id="experience">
+                        <input type="radio" name="area" id="education">
+                        <div class="area-labels">
+                            <label for="skill" class="skill-label">Skills <span class="las la-arrow-up"></span></label>
+                            <label for="experience" class="exp-label">Experience <span
+                                    class="las la-arrow-up"></span></label>
+                            <label for="education" class="edu-label">Education <span
+                                    class="las la-arrow-up"></span></label>
+                        </div>
+                        <div class="area-info">
+                            <div class="skill-area">
+                                <div>
+                                    <div class="skill-icon">
+                                        <span class="lab la-figma"></span>
+                                    </div>
+                                    <small>Figma</small>
+                                </div>
+                                <div>
+                                    <div class="skill-icon">
+                                        <span class="lab la-adobe"></span>
+                                    </div>
+                                    <small>After-Effect</small>
+                                </div>
+                                <div>
+                                    <div class="skill-icon">
+                                        <span class="lab la-adobe"></span>
+                                    </div>
+                                    <small>Photoshop</small>
+                                </div>
+                                <div>
+                                    <div class="skill-icon">
+                                        <span class="lab la-adobe"></span>
+                                    </div>
+                                    <small>XD</small>
+                                </div>
+                                <div>
+                                    <div class="skill-icon">
+                                        <span class="lab la-adobe"></span>
+                                    </div>
+                                    <small>Illustrator</small>
+                                </div>
+                                <div>
+                                    <div class="skill-icon">
+                                        <span class="lab la-adobe"></span>
+                                    </div>
+                                    <small>Indesign</small>
+                                </div>
+                            </div>
+                            <div class="exp-area">
+                                <div class="experience">
+                                    <span>2021- Present</span>
+                                    <h4>Brem Software Inc.</h4>
+                                    <h3><span>Pr</span>oduct designer</h3>
+                                </div>
+                                <div class="experience">
+                                    <span>2021- Present</span>
+                                    <h4>Brem Software Inc.</h4>
+                                    <h3><span>Pr</span>oduct designer</h3>
+                                </div>
+                                <div class="experience">
+                                    <span>2021- Present</span>
+                                    <h4>Brem Software Inc.</h4>
+                                    <h3><span>Pr</span>oduct designer</h3>
+                                </div>
+                                <div class="experience">
+                                    <span>2021- Present</span>
+                                    <h4>Brem Software Inc.</h4>
+                                    <h3><span>Pr</span>oduct designer</h3>
+                                </div>
+                            </div>
+                            <div class="edu-area">
+                                <div class="experience">
+                                    <span>2021- Present</span>
+                                    <h4>Brem Software Inc.</h4>
+                                    <h3><span>Pr</span>oduct designer</h3>
+                                </div>
+                                <div class="experience">
+                                    <span>2021- Present</span>
+                                    <h4>Brem Software Inc.</h4>
+                                    <h3><span>Pr</span>oduct designer</h3>
+                                </div>
+                                <div class="experience">
+                                    <span>2021- Present</span>
+                                    <h4>Brem Software Inc.</h4>
+                                    <h3><span>Pr</span>oduct designer</h3>
+                                </div>
+                                <div class="experience">
+                                    <span>2021- Present</span>
+                                    <h4>Brem Software Inc.</h4>
+                                    <h3><span>Pr</span>oduct designer</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-num">
+                    <div>
+                        <div class="num-count">
+                            <h1>219</h1>
+                            <span></span>
+                        </div>
+                        <small>Training</small>
+                    </div>
+                    <div>
+                        <div class="num-count">
+                            <h1>219</h1>
+                            <span></span>
+                        </div>
+                        <small>Training</small>
+                    </div>
+                    <div>
+                        <div class="num-count">
+                            <h1>219</h1>
+                            <span></span>
+                        </div>
+                        <small>Training</small>
+                    </div>
+                    <div>
+                        <div class="num-count">
+                            <h1>219</h1>
+                            <span></span>
+                        </div>
+                        <small>Training</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="servicios">
+            <div class="container">
+                <div class="service-wrapper">
+                    <h2 class="section-head block mb-5">Services <br>
+                        I Provide <span class="line"></span></h2>
+                    <div class="service-list">
+                        <div class="service active">
+                            <div>
+                                <h3>01</h3>
+                                <h2>UI/UX</h2>
+                            </div>
+                            <p>Lorem ipsun is simply dummy text of the printing and typesetting industry</p>
+                            <a href=""><span class="las la-arrow-up"></span></a>
+                        </div>
+                        <div class="service">
+                            <div>
+                                <h3>01</h3>
+                                <h2>UI/UX</h2>
+                            </div>
+                            <p>Lorem ipsun is simply dummy text of the printing and typesetting industry</p>
+                            <a href=""><span class="las la-arrow-up"></span></a>
+                        </div>
+                        <div class="service">
+                            <div>
+                                <h3>01</h3>
+                                <h2>UI/UX</h2>
+                            </div>
+                            <p>Lorem ipsun is simply dummy text of the printing and typesetting industry</p>
+                            <a href=""><span class="las la-arrow-up"></span></a>
+                        </div>
+                        <div class="service">
+                            <div>
+                                <h3>01</h3>
+                                <h2>UI/UX</h2>
+                            </div>
+                            <p>Lorem ipsun is simply dummy text of the printing and typesetting industry</p>
+                            <a href=""><span class="las la-arrow-up"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="container">
+                <div class="projects-wrapper">
+                    <h2 class="section-head block">Look at my <br> recent projects
+                        <span class="line"></span>
+                    </h2>
+
+                    <div class="project-slider-wrapper">
+                        <div class="project-slider">
+                            <div class="project">
+                                <a href="">
+                                    <div class="project-img" style="background-image:url(img/projects/1.jpg)"></div>
+                                </a>
+                                <div class="project-desc">
+                                    <h4>Vimeo</h4>
+                                    <h3>Ecomerce Website</h3>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="">
+                                    <div class="project-img" style="background-image:url(img/projects/2.jpg)"></div>
+                                </a>
+                                <div class="project-desc">
+                                    <h4>Vimeo</h4>
+                                    <h3>Ecomerce Website</h3>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="">
+                                    <div class="project-img" style="background-image:url(img/projects/3.jpg)"></div>
+                                </a>
+                                <div class="project-desc">
+                                    <h4>Vimeo</h4>
+                                    <h3>Ecomerce Website</h3>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="">
+                                    <div class="project-img" style="background-image:url(img/projects/3.jpg)"></div>
+                                </a>
+                                <div class="project-desc">
+                                    <h4>Vimeo</h4>
+                                    <h3>Ecomerce Website</h3>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="">
+                                    <div class="project-img" style="background-image:url(img/projects/3.jpg)"></div>
+                                </a>
+                                <div class="project-desc">
+                                    <h4>Vimeo</h4>
+                                    <h3>Ecomerce Website</h3>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="">
+                                    <div class="project-img" style="background-image:url(img/projects/1.jpg)"></div>
+                                </a>
+                                <div class="project-desc">
+                                    <h4>Vimeo</h4>
+                                    <h3>Ecomerce Website</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedbacks">
+            <div class="container">
+                <div class="feedback-wrapper">
+                    <h2 class="section-head block">
+                        Valuable Feedback <br>
+                        from my client <span class="line"></span>
+                    </h2>
+                    <div class="feedback">
+                        <div class="feedback-img">
+                            <img src="img/feedback.jpg" alt="">
+                        </div>
+                        <div class="feedback-details">
+                            <p>
+                                &quot;
+                                Awesome website! Easy to use. Lorem ipsum.
+                                &quot;
+                            </p>
+                            <h4>
+                                <span class="line"></span>
+                                Albert Walkers
+                            </h4>
+                            <small>Vivaco Group</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blogs" id="blog">
+            <div class="container">
+                <div class="blog-wrapper">
+                    <h2 class="section-head block">
+                        From my <br>
+                        blog posts <span class="line"></span>
+                    </h2>
+
+                    <div class="blog-list">
+                        <div class="blog">
+                            <div class="blog-desc">
+                                <div class="date">
+                                    <span class="dot"></span>
+                                    <span>02, June, 2022</span>
+                                </div>
+                                <h4>Diversification of digital marketing strategies</h4>
+                                <a href="">Read more <span class="las la-arrow-up"></span></a>
+                            </div>
+                            <div class="blog-img">
+                                <img src="img/blog/1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="blog">
+                            <div class="blog-desc">
+                                <div class="date">
+                                    <span></span>
+                                    <span>02, June, 2022</span>
+                                </div>
+                                <h4>Diversification of digital marketing strategies</h4>
+                                <a href="">Read more <span class="las la-arrow-up"></span></a>
+                            </div>
+                            <div class="blog-img">
+                                <img src="img/blog/2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="blog">
+                            <div class="blog-desc">
+                                <div class="date">
+                                    <span></span>
+                                    <span>02, June, 2022</span>
+                                </div>
+                                <h4>Diversification of digital marketing strategies</h4>
+                                <a href="">Read more <span class="las la-arrow-up"></span></a>
+                            </div>
+                            <div class="blog-img">
+                                <img src="img/blog/3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="blog">
+                            <div class="blog-desc">
+                                <div class="date">
+                                    <span></span>
+                                    <span>02, June, 2022</span>
+                                </div>
+                                <h4>Diversification of digital marketing strategies</h4>
+                                <a href="">Read more <span class="las la-arrow-up"></span></a>
+                            </div>
+                            <div class="blog-img">
+                                <img src="img/blog/4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sponsors">
+                    <img src="img/logos/1.png" alt="">
+                    <img src="img/logos/1.png" alt="">
+                    <img src="img/logos/1.png" alt="">
+                    <img src="img/logos/1.png" alt="">
+                    <img src="img/logos/1.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-us" id="contacto">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-img">
+                        <div>
+                            <img src="img/video.png" alt="">
+                            <span class="las la-play"></span>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <h1>Let's work together</h1>
+                        <p>You can express yourself however you want and whenever you want, for free.
+                            You can customize a template or make your own
+                        </p>
+                    </div>
+                    <div class="contact-btns">
+                        <a href="" class="btn">Say Hello <span class="lab la-telegram-plane"></span></a>
+                    </div>
+                </div>
+
+                <div class="address-wrapper">
+                    <div class="address-info">
+                        <div class="call">
+                            <small>Call</small>
+                            <h2>+1(234)56790</h2>
+                        </div>
+                        <div class="email">
+                            <small>Email</small>
+                            <h2>lobatoabrahan@gmail.com</h2>
+                        </div>
+                    </div>
+                    <div class="contact-icons">
+                        <div>
+                            <div>
+                                <span class="lab la-linkedin"></span>
+                            </div>
+                            <div>
+                                <span class="lab la-github"></span>
+                            </div>
+                            <div>
+                                <span class="lab la-instagram"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div class="footer-logo">
+                        <h2>
+                            <span class="logo-icon">
+                                <span class="las la-fly"></span>
+                            </span>
+                            Abrahan
+                        </h2>
+                    </div>
+                    <span>
+                        &copy; 2022 by <a href="#">Abrahan Lobato</a>. All rights reserved
+                    </span>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#top" class="to-top-btn">
+            To top <span class="line"></span>
+        </a>
+    </main>
+
     <script src="js/main.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.project-slider').slick({
+                autoplay: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+
+                responsive: [
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
 </body>
+
 </html>

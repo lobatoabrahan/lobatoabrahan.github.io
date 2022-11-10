@@ -1,11 +1,8 @@
-const navbarResponsive = document.querySelector('.navbar__responsive');
-let navbarResponsiveOpen = false
-navbarResponsive.addEventListener('click', () => {
-    if(!navbarResponsiveOpen) {
-        navbarResponsive.classList.add('open');
-        navbarResponsiveOpen = true;
-    } else {
-        navbarResponsive.classList.remove('open');
-        navbarResponsiveOpen = false
-    }
+window.addEventListener("scroll", () => {
+    let header = document.querySelector("header");
+    let fixed = header.offsetTop;
+    let scroll = document.querySelector(".to-top-btn");
+    scroll.classList.toggle("show", window.scrollY > 500)
+
+    header.classList.toggle("fixed", window.pageYOffset > fixed)
 })
