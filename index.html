@@ -508,26 +508,20 @@
 
                 <div class="address-wrapper">
                     <div class="address-info">
-                        <div class="call">
-                            <small>Call</small>
-                            <h2>+1(234)56790</h2>
-                        </div>
-                        <div class="email">
-                            <small>Email</small>
-                            <h2>lobatoabrahan@gmail.com</h2>
+                        <div class="form">
+                            <h2>Suscribete</h2>
+                            <form action="" name="submit-to-google-sheet">
+                                <input type="email" name="email" id="email" placeholder="Recibe informacion y descuentos" required>
+                                <input type="submit" name="" value="Enviar">
+                            </form>
                         </div>
                     </div>
                     <div class="contact-icons">
+                        <h2>Sigueme</h2>
                         <div>
-                            <div>
-                                <span class="lab la-linkedin"></span>
-                            </div>
-                            <div>
-                                <span class="lab la-github"></span>
-                            </div>
-                            <div>
-                                <span class="lab la-instagram"></span>
-                            </div>
+                            <a href="" class="lab la-linkedin"></a>
+                            <a href="" class="lab la-github"></a>
+                            <a href="" class="lab la-instagram"></a>
                         </div>
                     </div>
                 </div>
@@ -590,6 +584,19 @@
                 ]
             });
         });
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxOw389XRybzdFJxpT4-Gxh4DvVBAeWaZFrqPS2x1b7FXksyeC2gk7RSzAMy0b4IDmf/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => swal("Bienvenido!" ,"Gracias por querer formar parte de esto", "success"))
+                .then(response => form.reset())
+                .catch(error => swal('Lo siento', "Hemos tenido un error, vuelve a intentarlo", "error"));
+        })
     </script>
 </body>
 
