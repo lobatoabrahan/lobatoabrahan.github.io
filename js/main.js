@@ -6,3 +6,4 @@ window.addEventListener("scroll", () => {
 
     header.classList.toggle("fixed", window.pageYOffset > fixed)
 })
+

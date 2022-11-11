@@ -85,6 +85,7 @@ header label span {
   z-index: 10;
   padding: 1rem;
   transition: top 500ms;
+  width: 100%;
 }
 
 .sm-menu li {
@@ -980,12 +981,19 @@ section.about .section-head {
   background: var(--main-color);
   color: var(--white);
   padding: 1rem 2rem;
+  transition: all .3s;
 }
 
 .contact-btns a span {
   font-size: 1.4rem;
   display: inline-block;
   margin-left: .5rem;
+}
+
+.contact-btns a:hover {
+  background: var(--main-yellow);
+  color: #000;
+  transition: all .3s;
 }
 
 .address-wrapper,
@@ -1006,16 +1014,70 @@ section.about .section-head {
   color: var(--white);
 }
 
-.call {
+.form {
   margin-right: 4rem;
 }
 
-.call small,
+.form h2 {
+  margin-bottom: 1rem;
+}
+
+.form input {
+  position: relative;
+  display: inline-block;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: .5s;
+}
+
+.form input[type="email"] {
+  background: var(--white);
+  width: 350px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 0 1rem;
+  border-radius: 15px 0 0 15px;
+  color: rgba(0, 0, 0, .6);
+}
+
+.form input[type="submit"] {
+  position: relative;
+  left: -5px;
+  border-radius: 0 15px 15px 0;
+  width: 100px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: var(--main-yellow);
+  transition: all .3s;
+}
+
+.form input[type="submit"]:hover {
+  background: var(--main-color);
+  color: var(--white);
+  transform: scale(1.1);
+  transition: all .3s;
+}
+
+.form small,
 .email small {
   font-size: .95rem;
   display: inline-block;
   margin-bottom: .5rem;
   color: var(--text-grey);
+}
+
+.contact-icons {
+  position: relative;
+  display: inline-block;
+  transition: .5s;
+}
+
+.contact-icons h2 {
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .contact-icons>span {
@@ -1024,25 +1086,22 @@ section.about .section-head {
   margin-right: 1rem;
 }
 
-.contact-icons>div div {
+.contact-icons>div a {
   height: 50px;
   width: 50px;
   border-radius: 50%;
   display: grid;
   place-content: center;
   background: var(--text-grey);
-}
-
-.contact-icons > div div:hover {
-  background: var(--white);
-}
-
-.contact-icons > div span {
   color: #000;
   font-size: 1.3rem;
 }
 
-.contact-icons > div div:not(:first-child) {
+.contact-icons > div a:hover {
+  background: var(--main-yellow);
+}
+
+.contact-icons > div a:not(:first-child) {
   margin-left: .5rem;
 }
 
@@ -1089,10 +1148,22 @@ footer {
 }
 
 @media only screen and (max-width:1200px) {
+  header li {
+    margin-right: 1.5rem;
+  }
+
   .hero-flex, .container {
     width: 100%;
     padding: 3rem;
     padding-left: 3rem;
+  }
+
+  .about-wrapper {
+    grid-gap: 3rem;
+  }
+
+  .about-btns a {
+    padding: 1.3rem 1.3rem;
   }
 }
 
@@ -1131,6 +1202,10 @@ footer {
 
   .contact-icons {
     margin-top: 2rem;
+  }
+
+  .contact-icons h2 {
+    text-align: left;
   }
 
   .contact-icons > div {
