@@ -41,87 +41,67 @@
         <img src="images/logo.svg" alt="" class="">
       </a>
       <!--Navbar Toggler-->
-      <button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse"
+      <button class="navbar-menu-toggler p-3" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
+        aria-label="Toggle navigation" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
         <span class="navbar-toggler-default">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3.125 10H16.875" stroke="#060A11" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-            <path d="M3.125 5H16.875" stroke="#060A11" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-            <path d="M3.125 15H16.875" stroke="#060A11" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </span>
-        <span class="navbar-toggler-toggled">
-          <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M21.5 6.5L6.5 21.5" stroke="#404152" stroke-width="3" stroke-linecap="round"
-              stroke-linejoin="round" />
-            <path d="M21.5 21.5L6.5 6.5" stroke="#404152" stroke-width="3" stroke-linecap="round"
-              stroke-linejoin="round" />
+          <svg width="30" height="30" viewBox="0 0 100 100">
+            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
           </svg>
         </span>
       </button>
       <!--Navbar Menus Collapse-->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <ul class="navbar-nav ms-xxl-6 ms-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link  dropdown-toggle " href="index.html" role="button" data-bs-toggle="dropdown">Home</a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-megamenu-conatiner ">
-                <ul class="list-unstyled ">
-                  <li class="dropdown-megamenu-column-items">
-                    <a href="index.html" class="dropdown-item">Product Designer</a>
-                  </li>
-                  <li class="dropdown-megamenu-column-items">
-                    <a href="index2.html" class="dropdown-item ">Developer</a>
-                  </li>
-                  <li class="dropdown-megamenu-column-items">
-                    <a href="index3.html" class="dropdown-item ">Graphic Designer</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Inicio
+            </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link " href="project.html">
-              Project
+              Sobre mi
             </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="#">
-              Behance
+              Servicios
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Dribbble</a>
+            <a class="nav-link" href="#">
+              Portafolio
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="blog.html">Blog</a>
-          </li>
-          <li class="nav-item mt-6 mt-lg-0 ms-lg-7 ms-xl-18 ms-xxl-21 ms-sm-0 w-80 w-sm-25 w-md-20">
-            <a href="contact.html" class="btn btn-sm btn-links w-100">
-              <span class=" position-relative">
-                Contact
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5 15L15 5" stroke="#060A11" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path d="M6.875 5L15 5L15 13.125" stroke="#060A11" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg></span>
-              <span class=" position-relative">
-                Contact
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5 15L15 5" stroke="#060A11" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path d="M6.875 5L15 5L15 13.125" stroke="#060A11" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg></span>
+            <a class="nav-link " href="blog.html">
+              Blog
             </a>
           </li>
         </ul>
+        <div class="text-center justify-content-end">
+          <a href="contact.html" class="btn btn-sm btn-links">
+            <span class=" position-relative">
+              Contacto
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 15L15 5" stroke="#060A11" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M6.875 5L15 5L15 13.125" stroke="#060A11" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></span>
+            <span class=" position-relative">
+              Contacto
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 15L15 5" stroke="#060A11" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M6.875 5L15 5L15 13.125" stroke="#060A11" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></span>
+          </a>
+        </div>
       </div>
     </div>
   </nav>
@@ -157,17 +137,17 @@
           data-aos-once="true"
         >
           <h1 class="mb-6">
-            👋 Hey there, <br />
-            It’s Jack Downey.
+            Abrahan Lobato <br />
+            <p>Data Analyst</p>
           </h1>
           <p class="mb-md-7 mb-6 w-xxl-85 w-100">
-            Product Designer and Visual Developer in SF. I specialize in UI/UX
-            Design, Responsive Web Design, and Visual Development.
+            Con experiencia en análisis, exploración, preparación, automatizacion 
+            y visualización de datos
           </p>
           <div class="">
             <a href="contact.html" class="btn btn-primary btn-lg mb-6 mb-lg-0">
               <span class="position-relative">
-                Say Hello
+                Contactame
                 <svg
                   width="20"
                   height="20"
@@ -192,7 +172,7 @@
                 </svg>
               </span>
               <span class="position-relative">
-                Say Hello
+                Contactame
                 <svg
                   width="20"
                   height="20"
@@ -249,80 +229,6 @@
 -->
 
 
-<!--
-  ###########
-  services section
-  ###########
--->
-<section class="services">
-  <div class="services-shape-wrapper position-absolute w-100 h-100">
-    <div class="shape-1"></div>
-    <div class="shape-2"></div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="section-header">
-          <h2>Provide Services 🛠</h2>
-        </div>
-      </div>
-    </div>
-    <!-- ==== Srart services Item =====-->
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="card text-center">
-          <div class="card-icon">
-            <img src="images/service/services-icon-1.svg" alt="services-icon" />
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">UX, UI Design</h4>
-            <p class="card-text">
-              Strategy formulation is built on "the match between all
-              organisation resources and skills based program. Design is the
-              first thing that catches.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card text-center">
-          <div class="card-icon">
-            <img src="images/service/services-icon-2.svg" alt="services-icon" />
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Web Design</h4>
-            <p class="card-text">
-              Strategy formulation is built on "the match between all
-              organisation resources and skills based program. Design is the
-              first thing that catches.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card text-center mb-0">
-          <div class="card-icon">
-            <img src="images/service/services-icon-3.svg" alt="services-icon" />
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">UX Research</h4>
-            <p class="card-text">
-              Strategy formulation is built on "the match between all
-              organisation resources and skills based program. Design is the
-              first thing that catches.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- ==== End services Item =====-->
-  </div>
-</section>
-<!--
-  ###########
- End services section
-  ###########
--->
 
 
 <!--
@@ -482,6 +388,80 @@
   ###########
 -->
 
+<!--
+  ###########
+  services section
+  ###########
+-->
+<section class="services">
+  <div class="services-shape-wrapper position-absolute w-100 h-100">
+    <div class="shape-1"></div>
+    <div class="shape-2"></div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-header">
+          <h2>Provide Services 🛠</h2>
+        </div>
+      </div>
+    </div>
+    <!-- ==== Srart services Item =====-->
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card text-center">
+          <div class="card-icon">
+            <img src="images/service/services-icon-1.svg" alt="services-icon" />
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">UX, UI Design</h4>
+            <p class="card-text">
+              Strategy formulation is built on "the match between all
+              organisation resources and skills based program. Design is the
+              first thing that catches.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card text-center">
+          <div class="card-icon">
+            <img src="images/service/services-icon-2.svg" alt="services-icon" />
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Web Design</h4>
+            <p class="card-text">
+              Strategy formulation is built on "the match between all
+              organisation resources and skills based program. Design is the
+              first thing that catches.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card text-center mb-0">
+          <div class="card-icon">
+            <img src="images/service/services-icon-3.svg" alt="services-icon" />
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">UX Research</h4>
+            <p class="card-text">
+              Strategy formulation is built on "the match between all
+              organisation resources and skills based program. Design is the
+              first thing that catches.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==== End services Item =====-->
+  </div>
+</section>
+<!--
+  ###########
+ End services section
+  ###########
+-->
 
 <!--
   ###########
