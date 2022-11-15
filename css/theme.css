@@ -14156,9 +14156,7 @@ btn-check:focus+.btn-primary,
 .hero-content h1 p {
   font-size: 2rem;
   font-weight: 600;
-  background: linear-gradient(to right, #4c32e0 0%, #16b4f2 10%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  margin-top: -.5rem;
 }
 
 .hero-banner-image {
