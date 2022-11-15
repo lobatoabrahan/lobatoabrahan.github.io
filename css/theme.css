@@ -16467,6 +16467,11 @@ btn-check:focus+.btn-primary,
   }
 }
 
+#blog-fecha,
+#main-fecha {
+  text-transform: capitalize;
+}
+
 .blog .card,
 .related-blog .card,
 .taxonomy .card {
