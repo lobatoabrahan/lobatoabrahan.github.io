@@ -83,26 +83,3 @@ fetch(FULL_URL)
 
 
 })
-
-/* <div class="col-lg-4">
-        <article class="card ">
-          <div class="card-img">
-            <img src="images/blog/featured-thumb10.png" alt="featured-thumb1" class="w-100">
-          </div>
-          <div class="card-body">
-            <div class="blog-post-meta ">
-              <ul class="list-unstyled">
-                <li class="">
-                  <a href="taxonomy.html">Technology</a>
-                </li>
-                <li class="">
-                  <span class="ms-2">15 April 2021</span>
-                </li>
-              </ul>
-            </div>
-            <a href="blog-details.html" class="">
-              <h5>Usable Templates and Blocks for Jamstack</h5>
-            </a>
-          </div>
-        </article>
-      </div> */
