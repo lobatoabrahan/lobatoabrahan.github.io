@@ -125,6 +125,10 @@ a a:hover {
   .section-header {
     text-align: center;
   }
+
+  #text-section {
+    text-align: center;
+  }
 }
 
 .section-header h2 {

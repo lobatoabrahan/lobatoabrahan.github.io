@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8" />
+  <title>JackCreative</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/aos/aos.css">
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="vendor/icomoon/style.css">
+  <link rel="stylesheet" href="vendor/phosphor-icons/css/phosphor.css">
+  <link rel="stylesheet" href="vendor/slick/slick.css">
+  <link href="css/theme.css" rel="stylesheet" />
+
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+</head>
+
+<body>
+
+  <!--
+  #############
+  Navbar Area
+  #############
+-->
+
+  <header>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg position-fixed w-100 zindex-dropdown" id="navigationBar">
+      <div class="container-lg">
+        <!--Navbar Brand-->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.svg" alt="" class="">
+        </a>
+        <!--Navbar Toggler-->
+        <button class="navbar-menu-toggler p-3" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
+          <span class="navbar-toggler-default">
+            <svg width="30" height="30" viewBox="0 0 100 100">
+              <path class="line line1"
+                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path class="line line3"
+                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+          </span>
+        </button>
+        <!--Navbar Menus Collapse-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link " href="Sobre-mi.html">
+                Sobre mi
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#servicios">
+                Servicios
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="project.html">
+                Portafolio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="blog.html">
+                Blog
+              </a>
+            </li>
+          </ul>
+          <div class="text-center justify-content-end">
+            <a href="contact.html" class="btn btn-sm btn-links">
+              <span class=" position-relative">
+                Contacto
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 15L15 5" stroke="#060A11" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M6.875 5L15 5L15 13.125" stroke="#060A11" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></span>
+              <span class=" position-relative">
+                Contacto
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 15L15 5" stroke="#060A11" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M6.875 5L15 5L15 13.125" stroke="#060A11" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--
+#############
+End of  Navbar Area
+#############
+-->
+
+  <!--
+  #############
+  Contact  page
+  #############
+-->
+  <section class="contact-form pt-8 pt-xxl-15 pb-xxl-7 pb-0">
+    <div class="contact-form-shape-wrapper position-absolute w-100 h-100">
+      <div class="shape-1">
+      </div>
+      <div class="shape-2">
+      </div>
+      <div class="shape-3">
+      </div>
+      <div class="shape-4">
+      </div>
+      <div class="shape-5">
+      </div>
+    </div>
+    <div class="container">
+      <!-- ==== Srart Contact Form Section Header =====-->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-header">
+            <h2>Creemos un <br> progreso juntos</h2>
+          </div>
+        </div>
+      </div>
+      <!-- ==== End Contact Form Section Header  =====-->
+      <div class="row">
+        <!--== Start Contact Form Area ==-->
+        <div class="col-lg-8">
+          <form class="row" id="contact-form">
+            <h3>¿Tienes algun proyecto? <br> Enviame un mensaje. </h3>
+            <div class="col-md-12 col-lg-6">
+              <input type="text" class="form-control" id="inputFirstName" placeholder="Nombre" name="Nombre" required>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <input type="text" class="form-control" id="inputLastName" placeholder="Apellido" name="Apellido" required>
+            </div>
+            <div class="col-md-12 col-lg-12">
+              <input class="form-control" type="email" id="email" placeholder="Direccion de correo electronico" name="Correo" required>
+            </div>
+            <div class="col-md-12 col-lg-12">
+              <select class="form-select" aria-label="Default select example" name="Proyecto">
+                <option selected hidden>Proyecto</option>
+                <option value="Analisis de datos">Analisis de datos</option>
+                <option value="Automatizacion">Automatizacion</option>
+                <option value="Dashboards">Dashboards</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <textarea class="form-control" id="floatingTextarea2" placeholder="Detalles del proyecto" rows="8"
+                spellcheck="false" name="Detalles"></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary btn-lg mt-7 ">
+                <span class=" position-relative">
+                  Enviar mensaje
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 15L15 5" stroke="white" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M6.875 5L15 5L15 13.125" stroke="white" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg></span>
+                <span class=" position-relative">
+                  Enviar mensaje
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 15L15 5" stroke="white" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M6.875 5L15 5L15 13.125" stroke="white" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg></span>
+              </button>
+            </div>
+          </form>
+        </div>
+        <!--== End Contact Form Area ==-->
+        <!--== Staer Contact Form widget ==-->
+        <div class="col-lg-4">
+          <div class="contact-form-widget">
+            <img src="images/contact/icon.svg" alt="">
+            <h6>Tus datos se mantendran confidenciales
+              y no seran enviados a terceras partes</h6>
+            <ul class="list-unstyled">
+              <li>
+                <span>Correo</span>
+                <a href="mailto:lobatoabrahan@gmail.com">lobatoabrahan@gmail.com</a>
+              </li>
+              <li>
+                <span>linkedin</span>
+                <a href="#">Abrahan Lobato</a>
+              </li>
+              <li>
+                <span>Proyectos</span>
+                <a href="project.html">Ultimos proyectos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--== End Contact Form widget ==-->
+      </div>
+    </div>
+  </section>
+  <!--
+  #############
+  End Contact  page
+  #############
+-->
+
+  <!--
+  #############
+   Footer Section
+  #############
+-->
+  <footer class="footer-section">
+    <div class="footer-shape-wrapper position-absolute w-100 h-100">
+      <div class="shape-1">
+      </div>
+      <div class="shape-2">
+      </div>
+      <div class="shape-3">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class=" pt-8 pb-6 py-sm-8 pb-xxl-10 pt-xxl-20 text-center">
+            <div class=" position-relative">
+              <h2 class="mb-lg-6 mb-5">¿Tienes un proyecto en mente? <br> Pongámonos a trabajar</h2>
+              <div class="pt-xxl-4 pt-2">
+                <a href="contact.html" class="btn btn-primary btn-lg me-sm-3 mb-4 mb-sm-0">
+                  <span class=" position-relative">
+                    Contactame
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 15L15 5" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M6.875 5L15 5L15 13.125" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg></span>
+                  <span class=" position-relative">
+                    Contactame
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 15L15 5" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M6.875 5L15 5L15 13.125" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 mb-5">
+            <div class="footer-widget">
+              <div class="footer-logo">
+                <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+              </div>
+              <div class="footer-text">
+                <p>¡Estoy emocionado de ver tu proyecto!, me sumergiré en sus datos con entusiasmo y crearé historias
+                  interesantes a partir de ellos.</p>
+              </div>
+              <div class="footer-social-icon">
+                <span>Sigueme</span>
+                <a href="#" class="icon- linkedin"><svg viewBox="0 0 512 512">
+                    <path
+                      d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z" />
+                  </svg></a>
+                <a href="#" class="icon- instagram"><svg viewBox="-42 -42 250 250">
+                    <circle cx="129" cy="39" r="10" />
+                    <g fill="none" stroke-width="15">
+                      <circle cx="84.5" cy="84.5" r="35.5" />
+                      <path d="M59 8C22 8 8 22 8 59v51c0 37 14 51 51 51h51c37 0 51-14 51-51V59c0-37-14-51-51-51H59z" />
+                    </g>
+                  </svg></a>
+                <a href="#" class="icon- github"><svg viewBox="71 71 370 370">
+                    <path
+                      d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z" />
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-5">
+            <div class="footer-widget">
+              <div class="footer-widget-heading" id="footer-heading-1">
+                <h3>Secciones</h3>
+              </div>
+              <ul id="footer-ul">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Sobre-mi.html">Sobre mi</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Portafolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-5">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Subscribete</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <p>No olvides suscribirse para recibir nuevas publicaciones, complete el formulario a continuación.</p>
+              </div>
+              <div class="form">
+                <form action="" name="submit-to-google-sheet">
+                  <input type="email" name="email" id="email" placeholder="Direccion de email" required>
+                  <input type="submit" name="" value="Enviar">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 text-center text-lg-left">
+                <div class="copyright-text">
+                  <p>Copyright &copy; 2022, All Right Reserved <a href="index.html">Abrahan Lobato</a></p>
+                </div>
+              </div>
+              <!-- <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Policy</a></li>
+                  <li><a href="#">Contacto</a></li>
+                </ul>
+              </div>
+            </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+  <!--
+#############
+End  Footer Section
+#############
+-->
+  <!-- Mark up for Script Section-->
+  <script src="vendor/jQuery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="vendor/slick/slick.min.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/tweenmax/TweenMax.min.js"></script>
+  <script src="vendor//counter-up/countup.js"></script>
+  <script src="vendor/waypoints/waypoints.min.js"></script>
+  <script src="vendor/match-height/match-height.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
